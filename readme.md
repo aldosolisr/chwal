@@ -6,7 +6,7 @@
 ## dependencies: 
 pywal, colorthief(optional), haishoku(optional), colorz(optional), xrdb
 dwm with xrdb patch(to change dwm colorscheme), st with xresources patch, dmenu
-notify-send, xsetroot.
+dwm with fsignal patch, notify-send, xsetroot.
 
 ## how to configure xrdb
 dwm.c with xrdb patch
@@ -78,4 +78,14 @@ loadxrdb()
   }
   XCloseDisplay(display);
 }
+```
+
+add in
+config.def.h
+```
+static Signal signals[] = {
+	/* signum       function        argument  */
+	{ 1,            xrdb,      {.v = NULL} },
+};
+
 ```
