@@ -1,11 +1,14 @@
 # Simple bash script to change wallpaper and colorschemes on dwm and st using dmenu and pywal
 
-# dependencies: 
+## demo
+![demo video](https://github.com/aldosolisr/chwal/blob/master/video.gif)
+
+## dependencies: 
 pywal, colorthief(optional), haishoku(optional), colorz(optional), xrdb
 dwm with xrdb patch(to change dwm colorscheme), st with xresources patch, dmenu
 notify-send, xsetroot.
 
-# how to configure xrdb
+## how to configure xrdb
 dwm.c with xrdb patch
 replace 
 
