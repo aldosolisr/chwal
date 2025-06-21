@@ -41,7 +41,9 @@ loadxrdb()
 }
 
 ` 
+
 with
+
 `
 void
 loadxrdb()
@@ -70,8 +72,6 @@ loadxrdb()
       }
     }
   }
-
   XCloseDisplay(display);
 }
-
-` 
+`
