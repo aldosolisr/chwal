@@ -20,7 +20,7 @@ fi
 
 # set slock bg image
 ln -sf "$WALL_DIR/$WALLPAPER" "$WALL_DIR/current.wal"
-rm $HOME/.cache/wal/schemes/_home_aldosolisr_Wallpapers_current_wal_**
+wal -c
 
 BACKEND="$(printf "colorthief\nhaishoku\nwal\ncolorz" | dmenu -p "backend" )"
 if [ -z $BACKEND ]; then 
